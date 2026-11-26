@@ -19,43 +19,6 @@
 
     <link rel="stylesheet" href="estilos.css">
 
-    <!-- Estilos de los elementos nuevos (WhatsApp y sección para administraciones) -->
-    <style>
-        #administraciones {
-            padding: 60px 20px;
-        }
-
-        .whatsapp-flotante {
-            position: fixed;
-            right: 16px;
-            bottom: 16px;
-            z-index: 1000;
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            padding: 12px 18px;
-            border-radius: 999px;
-            background: #25d366;
-            color: #0b3d1e;
-            font-weight: 700;
-            text-decoration: none;
-            box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
-        }
-
-        .whatsapp-flotante:hover,
-        .whatsapp-flotante:focus-visible {
-            background: #1ebe5b;
-        }
-
-        .contacto-directo {
-            margin-top: 12px;
-            font-weight: 600;
-        }
-
-        .contacto-directo a {
-            color: inherit;
-        }
-    </style>
 </head>
 
 <body>
@@ -257,11 +220,9 @@
                 Contanos qué necesitás y prepararemos una propuesta
                 adaptada a tu edificio.
             </p>
-            <!-- COMPLETAR: reemplazá 549341XXXXXXX por tu número (código de país 54, 9 y el número sin 0 ni 15) y el correo -->
             <p class="contacto-directo">
                 ¿Preferís escribirnos directo? WhatsApp:
-                <a href="https://wa.me/549341XXXXXXX">341 XXX-XXXX</a>
-                · Correo: <a href="mailto:CORREO@EMPRESA.COM">CORREO@EMPRESA.COM</a>
+                <a href="https://wa.me/5493412828076">341 282-8076</a>
             </p>
         </div>
 
@@ -309,6 +270,25 @@
                 </select>
             </div>
 
+            <div class="campo">
+                <label for="direccion">Dirección o barrio</label>
+                <input
+                    type="text"
+                    id="direccion"
+                    placeholder="Ej: Córdoba 1200, centro"
+                    required
+                >
+            </div>
+
+            <div class="campo">
+                <label for="pisos">Pisos o unidades <span>(opcional)</span></label>
+                <input
+                    type="text"
+                    id="pisos"
+                    placeholder="Ej: 8 pisos, 24 unidades"
+                >
+            </div>
+
             <div class="campo campo-completo">
                 <label for="mensaje">Contanos qué necesitás</label>
 
@@ -318,6 +298,10 @@
                     placeholder="Ej: Edificio de 8 pisos con limpieza de espacios comunes..."
                 ></textarea>
             </div>
+
+            <p class="nota-formulario">
+                Al enviar, se abre WhatsApp con tu consulta lista para mandarnos.
+            </p>
 
             <button type="submit" class="boton-enviar">
                 Solicitar presupuesto
@@ -348,8 +332,7 @@
             <h3>Contacto</h3>
 
             <p>Rosario, Santa Fe</p>
-            <a href="https://wa.me/549341XXXXXXX">WhatsApp: 341 XXX-XXXX</a>
-            <a href="mailto:CORREO@EMPRESA.COM">CORREO@EMPRESA.COM</a>
+            <a href="https://wa.me/5493412828076">WhatsApp: 341 282-8076</a>
             <a href="#contacto">Solicitar presupuesto</a>
         </div>
 
@@ -361,7 +344,7 @@
 
 </footer>
 
-<a class="whatsapp-flotante" href="https://wa.me/549341XXXXXXX" aria-label="Escribinos por WhatsApp">
+<a class="whatsapp-flotante" href="https://wa.me/5493412828076" aria-label="Escribinos por WhatsApp">
     <span aria-hidden="true">💬</span> WhatsApp
 </a>
 

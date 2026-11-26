@@ -266,7 +266,7 @@ section {
 
     border-radius: 15px;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.88);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
 .campo {
@@ -512,4 +512,65 @@ footer {
     height: 100px;
 }
 
+}
+
+
+/* ===== Elementos nuevos ===== */
+
+#administraciones {
+    padding: 80px 8%;
+    background-color: #dfe8e3;
+}
+
+.contacto-directo {
+    margin-top: 12px;
+    font-weight: bold;
+}
+
+.contacto-directo a {
+    color: #556b2f;
+}
+
+.campo label span {
+    font-weight: normal;
+    color: #555555;
+}
+
+.nota-formulario {
+    width: 100%;
+    margin: 0;
+    font-size: 14px;
+    color: #555555;
+}
+
+.whatsapp-flotante {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    z-index: 1000;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 12px 18px;
+    border-radius: 999px;
+
+    background-color: #25d366;
+    color: #0b3d1e;
+    font-weight: bold;
+    text-decoration: none;
+
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+.whatsapp-flotante:hover,
+.whatsapp-flotante:focus-visible {
+    background-color: #1ebe5b;
+}
+
+@media (max-width: 768px) {
+    #administraciones {
+        padding: 60px 8%;
+    }
 }
